@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingRight="16dp"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:id="@+id/my_layout">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="get"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/get"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="refresh"
+            android:layout_marginRight="16dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/refresh"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clear"
+            android:layout_alignBottom="@+id/refresh"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/clear"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/refresh"
+                android:layout_centerHorizontal="true"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:id="@+id/list"
+                android:background="@drawable/border"
+                android:layout_marginBottom="16dp"  >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/text"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center"
+                    android:textColor="#ff0000"
+                    android:shadowColor="#ff0000"
+                    android:maxLines="40"
+                    />
+
+                ></LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>
+
